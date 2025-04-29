@@ -3,23 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome - Sri Gokula Vishnu</title>
+  <title>Sri Gokula Vishnu - Welcome</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body class="intro-page">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #f7f8fa, #eef1f5);
+      color: #1d1d1f;
+    }
 
-  <section class="hero">
-    <div class="circle-img">
-      <img src="orginal.jpg" alt="Profile" />
-    </div>
-    <div class="hero-text">
-      <p style="font-size: larger;font-family: Verdana, Geneva, Tahoma, sans-serif;">Hi I'm</p>
-      <h1>Sri Gokula Vishnu</h1>
-      <p>
-        I’m a passionate IT student with a developer mindset,
-        looking for internships to build real-world, scalable solutions.
-      </p>
-      <a href="portfolio.html" class="read-more">READ MORE</a>
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hero-container {
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 50px;
+      align-items: center;
+      justify-content: center;
+      animation: fadeInUp 1s ease-in;
+    }
+    .hero-container:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #e6e6e6;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .hero-content h1 {
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .hero-content h2 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #5a5a5a;
+      margin-bottom: 25px;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #4f4f51;
+      color: white;
+      border-radius: 40px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .cta-button:hover {
+      background-color: #a8a8b6;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="orginal.jpg" alt="Sri Gokula Vishnu">
+      </div>
+      <div class="hero-content">
+        <h1>Sri Gokula Vishnu</h1>
+        <h2>Aspiring Software Developer</h2>
+        <p>
+          I'm a forward-thinking IT undergraduate with a strong interest in full-stack development,
+          data structures, and scalable system design. I enjoy solving real-world problems with code,
+          and I'm currently seeking impactful internship opportunities to learn, grow, and contribute.
+        </p>
+        <a href="portfolio.html" class="cta-button">Explore Portfolio</a>
+      </div>
     </div>
   </section>
 
